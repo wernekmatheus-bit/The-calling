@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Calling With My Angel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              angel: {
+                gold: '#D4AF37',
+                light: '#F9F7F2',
+                dark: '#1A1A1A',
+                accent: '#C5A028'
+              }
+            },
+            backgroundImage: {
+              'gold-gradient': 'linear-gradient(to right, #D4AF37, #F1D676, #D4AF37)',
+              'luxury-card': 'linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%)',
+            },
+            boxShadow: {
+              'gold-glow': '0 0 15px rgba(212, 175, 55, 0.3)',
+              'premium': '0 10px 30px -10px rgba(0, 0, 0, 0.05)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F9F7F2;
+        color: #1A1A1A;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      /* Luxury Glassmorphism */
+      .glass-card {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 
+          0 4px 6px -1px rgba(0, 0, 0, 0.02), 
+          0 10px 15px -3px rgba(0, 0, 0, 0.05),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+        transition: all 0.3s ease;
+      }
+      
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.75);
+        box-shadow: 
+          0 10px 25px -5px rgba(212, 175, 55, 0.15),
+          0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        border-color: rgba(212, 175, 55, 0.3);
+      }
+
+      .glass-nav {
+         background: rgba(255, 255, 255, 0.9);
+         backdrop-filter: blur(20px);
+         -webkit-backdrop-filter: blur(20px);
+         border-top: 1px solid rgba(212, 175, 55, 0.15);
+         box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+      }
+
+      /* Scrollbar refinement */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(212, 175, 55, 0.3);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(212, 175, 55, 0.6);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.42.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.363.0?external=react,react-dom",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.20?external=react,react-dom",
+    "canvas-confetti": "https://esm.sh/canvas-confetti@1.9.2",
+    "sonner": "https://esm.sh/sonner@1.4.3?external=react,react-dom",
+    "date-fns": "https://esm.sh/date-fns@3.6.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "date-fns/": "https://esm.sh/date-fns@^4.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
